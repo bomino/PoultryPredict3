@@ -1,0 +1,255 @@
+{
+    "Random Forest_20241126_215425_20241126_215425": {
+        "version": "2.0.0",
+        "model_type": "random_forest",
+        "metrics": {
+            "mse": 7558.447552392408,
+            "rmse": 86.93933259688855,
+            "r2": 0.9608483889274544,
+            "mae": 60.02256332599955,
+            "mape": 19.808324308713505
+        },
+        "predictions": [
+            1326.008528729002,
+            566.1961314429998,
+            891.0965295439994,
+            500.70303708930027,
+            1312.0418687570022,
+            221.06244329100016,
+            93.0790124807,
+            865.5697965490002,
+            644.3440039715001,
+            133.92339723449996,
+            881.6450330130002,
+            892.6042418579996,
+            1363.7596019220023,
+            1002.4751202370009,
+            647.3252274630001
+        ],
+        "actual": [
+            1411.429607,
+            509.841,
+            868.3528279,
+            251.3111,
+            1411.050013,
+            221.605235,
+            41.20880007,
+            874.6679,
+            558.5943,
+            130.7444,
+            879.8853,
+            868.0847173,
+            1411.07,
+            875.722,
+            683.9611
+        ],
+        "data_characteristics": {
+            "n_samples": 98,
+            "n_features": 5,
+            "has_outliers": true,
+            "outliers_by_column": {
+                "Int Temp": false,
+                "Int Humidity": true,
+                "Air Temp": false,
+                "Wind Speed": false,
+                "Feed Intake": false
+            },
+            "missing_values": 0,
+            "feature_correlations": "              Int Temp  Int Humidity  Air Temp  Wind Speed  Feed Intake\nInt Temp      1.000000     -0.822901  0.569176    0.239364    -0.537800\nInt Humidity -0.822901      1.000000 -0.601044   -0.184727     0.740265\nAir Temp      0.569176     -0.601044  1.000000    0.187313    -0.576285\nWind Speed    0.239364     -0.184727  0.187313    1.000000    -0.173815\nFeed Intake  -0.537800      0.740265 -0.576285   -0.173815     1.000000",
+            "data_size": "small",
+            "complexity": "medium",
+            "feature_stats": {
+                "Int Temp": {
+                    "mean": 30.303697526938777,
+                    "std": 2.3647935289401234,
+                    "skew": -0.27117704620923205,
+                    "kurtosis": -0.7656076860513412,
+                    "has_outliers": false
+                },
+                "Int Humidity": {
+                    "mean": 64.85992072816326,
+                    "std": 8.509824188310166,
+                    "skew": 0.30118558056892186,
+                    "kurtosis": 0.29638207768387925,
+                    "has_outliers": true
+                },
+                "Air Temp": {
+                    "mean": 28.435497085306128,
+                    "std": 1.879758969669018,
+                    "skew": 0.21968239354254085,
+                    "kurtosis": -0.8399864323537218,
+                    "has_outliers": false
+                },
+                "Wind Speed": {
+                    "mean": 3.240816326530612,
+                    "std": 0.9657897505176389,
+                    "skew": -0.21974114153671373,
+                    "kurtosis": -0.5717040122186794,
+                    "has_outliers": false
+                },
+                "Feed Intake": {
+                    "mean": 50.55320920377551,
+                    "std": 25.589354319023215,
+                    "skew": 0.2268532265699042,
+                    "kurtosis": -0.9556108584341461,
+                    "has_outliers": false
+                }
+            }
+        },
+        "training_config": {
+            "test_size": 0.15,
+            "cross_validation": false,
+            "cv_folds": null,
+            "parameters": {
+                "n_estimators": 100,
+                "max_depth": null,
+                "min_samples_leaf": 1,
+                "max_features": "sqrt",
+                "random_state": 42
+            }
+        },
+        "feature_importance": {
+            "Int Humidity": 0.3523893381787014,
+            "Feed Intake": 0.33976734761893945,
+            "Air Temp": 0.13951042444166017,
+            "Int Temp": 0.12280874946704552,
+            "Wind Speed": 0.045524140293653544
+        },
+        "data_hash": "5d6dea9211dca23d75f1dea406488b85",
+        "model_path": "models/saved_models\\Random Forest_20241126_215425_20241126_215425.joblib",
+        "created_at": "2024-11-26T21:54:25.581445",
+        "model_name": "Random Forest_20241126_215425"
+    },
+    "Gradient Boosting_20241126_215727_20241126_215727": {
+        "version": "2.0.0",
+        "model_type": "gradient_boosting",
+        "metrics": {
+            "mse": 8005.447169209979,
+            "rmse": 89.47316451992731,
+            "r2": 0.9584335745077108,
+            "mae": 64.41669683746659,
+            "mape": 36.00074396967203
+        },
+        "predictions": [
+            1329.7613920754184,
+            731.1961975478546,
+            870.8849427907063,
+            282.15243815192224,
+            1329.7613920754184,
+            255.77437668805743,
+            166.15745455347295,
+            883.773666823194,
+            661.6424642336428,
+            166.15745455347295,
+            857.1553450776172,
+            883.000497219719,
+            1293.7475730584738,
+            1080.041350407025,
+            718.8652413111976,
+            166.15745455347295,
+            815.1636599094516,
+            415.4460226764314,
+            255.77437668805743,
+            135.08904580144392
+        ],
+        "actual": [
+            1411.429607,
+            509.841,
+            868.3528279,
+            251.3111,
+            1411.050013,
+            221.605235,
+            41.20880007,
+            874.6679,
+            558.5943,
+            130.7444,
+            879.8853,
+            868.0847173,
+            1411.07,
+            875.722,
+            683.9611,
+            162.8444,
+            800.8398,
+            439.7485,
+            220.9641997,
+            42.06659955
+        ],
+        "data_characteristics": {
+            "n_samples": 98,
+            "n_features": 5,
+            "has_outliers": true,
+            "outliers_by_column": {
+                "Int Temp": false,
+                "Int Humidity": true,
+                "Air Temp": false,
+                "Wind Speed": false,
+                "Feed Intake": false
+            },
+            "missing_values": 0,
+            "feature_correlations": "              Int Temp  Int Humidity  Air Temp  Wind Speed  Feed Intake\nInt Temp      1.000000     -0.822901  0.569176    0.239364    -0.537800\nInt Humidity -0.822901      1.000000 -0.601044   -0.184727     0.740265\nAir Temp      0.569176     -0.601044  1.000000    0.187313    -0.576285\nWind Speed    0.239364     -0.184727  0.187313    1.000000    -0.173815\nFeed Intake  -0.537800      0.740265 -0.576285   -0.173815     1.000000",
+            "data_size": "small",
+            "complexity": "medium",
+            "feature_stats": {
+                "Int Temp": {
+                    "mean": 30.303697526938777,
+                    "std": 2.3647935289401234,
+                    "skew": -0.27117704620923205,
+                    "kurtosis": -0.7656076860513412,
+                    "has_outliers": false
+                },
+                "Int Humidity": {
+                    "mean": 64.85992072816326,
+                    "std": 8.509824188310166,
+                    "skew": 0.30118558056892186,
+                    "kurtosis": 0.29638207768387925,
+                    "has_outliers": true
+                },
+                "Air Temp": {
+                    "mean": 28.435497085306128,
+                    "std": 1.879758969669018,
+                    "skew": 0.21968239354254085,
+                    "kurtosis": -0.8399864323537218,
+                    "has_outliers": false
+                },
+                "Wind Speed": {
+                    "mean": 3.240816326530612,
+                    "std": 0.9657897505176389,
+                    "skew": -0.21974114153671373,
+                    "kurtosis": -0.5717040122186794,
+                    "has_outliers": false
+                },
+                "Feed Intake": {
+                    "mean": 50.55320920377551,
+                    "std": 25.589354319023215,
+                    "skew": 0.2268532265699042,
+                    "kurtosis": -0.9556108584341461,
+                    "has_outliers": false
+                }
+            }
+        },
+        "training_config": {
+            "test_size": 0.2,
+            "cross_validation": false,
+            "cv_folds": null,
+            "parameters": {
+                "n_estimators": 100,
+                "learning_rate": 0.1,
+                "max_depth": 3,
+                "validation_fraction": 0.1,
+                "early_stopping_rounds": 10,
+                "random_state": 42
+            }
+        },
+        "feature_importance": {
+            "feature_1": 0.5992165167530364,
+            "feature_4": 0.29080676418877005,
+            "feature_3": 0.0908364091581584,
+            "feature_2": 0.011989878294397694,
+            "feature_0": 0.007150431605637465
+        },
+        "data_hash": "5d6dea9211dca23d75f1dea406488b85",
+        "model_path": "models/saved_models\\Gradient Boosting_20241126_215727_20241126_215727.joblib",
+        "created_at": "2024-11-26T21:57:27.925677",
+        "model_name": "Gradient Boosting_20241126_215727"
+    }
+}
