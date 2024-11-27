@@ -85,7 +85,7 @@ def render_model_management_ui(model_manager):
                 try:
                     model_manager.delete_model(row['model_id'])
                     st.success(f"Model '{row['model_name']}' deleted successfully!")
-                    st.experimental_rerun()
+                    st.rerun()
                 except Exception as e:
                     st.error(f"Error deleting model: {str(e)}")
 
